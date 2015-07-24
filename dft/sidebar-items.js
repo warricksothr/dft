@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["complex","Transformation of complex data."],["real","Transformation of real data."]]});
