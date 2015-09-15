@@ -67,7 +67,7 @@ pub fn unpack(data: &[f64]) -> Vec<c64> {
     cdata
 }
 
-fn compose(data: &mut [c64], n: usize, inverse: bool) {
+pub fn compose(data: &mut [c64], n: usize, inverse: bool) {
     data[0] = c64(data[0].re() + data[0].im(), data[0].re() - data[0].im());
     if inverse {
         data[0] = data[0] * 0.5;
